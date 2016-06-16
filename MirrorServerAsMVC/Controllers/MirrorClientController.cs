@@ -25,7 +25,6 @@ namespace MirrorServerAsMVC.Controllers
         public async Task<JsonResult> GetUserInfoStream()
         {
             createReceivedDirectory(Server);
-
             var stream = Request.InputStream;
             FileStream fileStream = null;
             try
